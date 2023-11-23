@@ -1,0 +1,84 @@
+
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  font-family: 'Oswald', sans-serif;
+}
+
+@keyframes gradient {
+
+  0%,
+  100% {
+      background-position: 0% 50%;
+  }
+
+  50% {
+      background-position: 100% 50%;
+  }
+}
+
+header {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  filter: drop-shadow(0 0 10px #fb5dad) drop-shadow(0 0 10px #55fb9f) drop-shadow(0 0 10px #b97aff);
+}
+
+.in-circle {
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, #1c1632, #0d0723, black);
+  border-radius: 50%;
+}
+
+.in-circle::after {
+  content: "Gordan Kranjčić";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: larger;
+}
+
+table {
+  margin: 20px auto 0px auto;
+  min-width: fit-content;
+}
+
+thead {
+  color: white;
+  font-size: small;
+}
+
+#heading {
+  font-size: large;
+}
+
+th,
+td {
+  border: solid 1px #e6e6e6;
+  padding: 2px;
+  border-radius: 10%;
+}
+
+tr,
+a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
