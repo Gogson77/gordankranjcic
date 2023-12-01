@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Animation - Scroll Down and Up Arrow</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            margin: 0px;
+            transform: translate(80px);
+        }
+
+        #intro-section {
+            width: 100%;
+            height: 100vh;
+            background-color: #914E67;
+            position: relative;
+        }
+
+        #next-section {
+            width: 100%;
+            height: 100vh;
+            background-color: #5D7586;
+            position: relative;
+        }
+
+        #scroll-down-arrow {
+            position: absolute;
+            bottom: 24px;
+            width: 46px;
+            height: 46px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            border: 2px solid #fff;
+            border-radius: 100%;
+            animation: bounce 2s infinite running;
+        }
+
+        #scroll-down-arrow:hover {
+            animation-play-state: paused;
+        }
+
+        #scroll-down-arrow::before {
+            position: absolute;
+            content: '';
+            width: 16px;
+            height: 16px;
+            left: 0px;
+            right: 0px;
+            top: 10px;
+            margin: 0 auto;
+            border-left: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            transform: rotate(-45deg);
+        }
+
+        #scroll-up-arrow {
+            position: absolute;
+            bottom: 24px;
+            width: 46px;
+            height: 46px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            border: 2px solid #fff;
+            border-radius: 100%;
+            animation: bounce 2s infinite running;
+        }
+
+        #scroll-up-arrow:hover {
+            animation-play-state: paused;
+        }
+
+        #scroll-up-arrow::before {
+            position: absolute;
+            content: '';
+            width: 16px;
+            height: 16px;
+            left: 0;
+            right: 0;
+            top: 15px;
+            margin: 0 auto;
+            border-right: 2px solid #FFF;
+            border-top: 2px solid #FFF;
+            transform: rotate(-45deg);
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-5px);
+            }
+
+            60% {
+                transform: translateY(-3px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="intro-section">
+        <h1>Section 1</h1>
+        <a id="scroll-down-arrow" href="#next-section"></a>
+    </div>
+    <div id="next-section">
+        <h1>Section 2</h1>
+        <a id="scroll-up-arrow" href="#intro-section"></a>
+    </div>
+</body>
+
+</html>
