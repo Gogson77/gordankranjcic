@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/fonts/stylesheet.css" />
+  <link rel="stylesheet" href="../css/base-style.css" />
+
+  <title>Holy Grail Layout</title>
+  <style>
+    body {
+      margin: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    body>* {
+      padding: 0 1rem;
+    }
+
+    .header {
+      background-color: skyblue;
+      border: 0.5rem black solid;
+    }
+
+    .navbar {
+      background-color: pink;
+      border: 0.5rem black solid;
+    }
+
+    .navbar ul {
+      margin: 1rem 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem;
+      list-style-type: none;
+    }
+
+    .main {
+      background: lightgreen;
+      border: 0.5rem black solid;
+    }
+
+    .sidebar {
+      background: lightyellow;
+      border: 0.5rem black solid;
+    }
+
+    .footer {
+      background-color: lavender;
+      border: 0.5rem black solid;
+    }
+
+    @media screen and (min-width: 100ch) {
+      body {
+        display: grid;
+        grid-template-columns: 1fr minmax(15ch, 30%);
+        grid-template-rows: auto auto 1fr auto;
+      }
+
+      .header {
+        grid-column: 1/-1;
+      }
+
+      .navbar {
+        grid-column: 1/-1;
+      }
+
+      .main {}
+
+      .sidebar {}
+
+      .footer {
+        grid-column: 1/-1;
+      }
+    }
+
+    @media screen and (min-width: 140ch) {
+      body {
+        grid-template-columns: minmax(15ch, 20%) 1fr minmax(15ch, 20%);
+      }
+
+      .navbar {
+        grid-column: span 1;
+      }
+
+      .navbar ul {
+        flex-direction: column;
+      }
+
+      .main {}
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="challenge-title">01.06 Holy Grail Layout</h1>
+  </header>
+  <aside class="navbar">
+    <h2>Nav</h2>
+    <nav class="navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <main class="main">
+    <h2>Main area</h2>
+    <p>
+      Drops of rain could be heard hitting the pane, which made him feel quite
+      sad. "How about if I sleep a little bit longer and forget all this
+      nonsense", he thought, but that was something he was unable to do
+      because he was used to sleeping on his right, and in his present state
+      couldn't get into that position. However hard he threw himself onto his
+      right, he always rolled back to where he was.
+    </p>
+
+    <p>
+      He must have tried it a hundred times, shut his eyes so that he wouldn't
+      have to look at the floundering legs, and only stopped when he began to
+      feel a mild, dull pain there that he had never felt before. "Oh, God",
+      he thought, "what a strenuous career it is that I've chosen! Travelling
+      day in and day out.
+    </p>
+
+    <p>
+      Doing business like this takes much more effort than doing your own
+      business at home, and on top of that there's the curse of travelling,
+      worries about making train connections, bad and irregular food, contact
+      with different people all the time so that you can never get to know
+      anyone or become friendly with them. It can all go to Hell!
+    </p>
+  </main>
+  <aside class="sidebar">
+    <h2>Sidebar</h2>
+  </aside>
+  <footer class="footer">
+    <h2>Footer</h2>
+  </footer>
+</body>
+
+</html>
