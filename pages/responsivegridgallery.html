@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Galerija</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 3rem;
+            margin: 3rem 0;
+        }
+
+        .gallery-thumbnail {
+            border: 1px solid #ddd;
+            border-radius: 10%;
+            text-align: center;
+        }
+
+        .gallery-thumbnail img {
+            background-color: #6ba2d9;
+            max-width: 100%;
+            border-top-left-radius: 10%;
+            border-top-right-radius: 10%;
+            height: auto;
+        }
+
+        .gallery-thumbnail p {
+            margin: 10px 0;
+            font-weight: 100;
+        }
+
+        @media screen and (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 414px) {
+            .gallery {
+                grid-template-columns: minmax(150px, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery-container">
+        <h1>Gallery Heading</h1>
+        <div class="gallery">
+            <div class="gallery-thumbnail">
+                <img src="../images/placeholder-image.png" alt="">
+                <p>Image Title</p>
+            </div>
+            <div class="gallery-thumbnail">
+                <img src="../images/placeholder-image.png" alt="">
+                <p>Image Title</p>
+            </div>
+            <div class="gallery-thumbnail">
+                <img src="../images/placeholder-image.png" alt="">
+                <p>Image Title</p>
+            </div>
+            <div class="gallery-thumbnail">
+                <img src="../images/placeholder-image.png" alt="">
+                <p>Image Title</p>
+            </div>
+            <div class="gallery-thumbnail">
+                <img src="../images/placeholder-image.png" alt="">
+                <p>Image Title</p>
+            </div>
+            <div class="gallery-thumbnail">
+                <img src="../images/placeholder-image.png" alt="">
+                <p>Image Title</p>
+            </div>
+            <div class="gallery-thumbnail">
+                <img src="../images/placeholder-image.png" alt="">
+                <p>Image Title</p>
+            </div>
+            <div class="gallery-thumbnail">
+                <img src="../images/placeholder-image.png" alt="">
+                <p>Image Title</p>
+            </div>
+            <div class="gallery-thumbnail">
+                <img src="../images/placeholder-image.png" alt="">
+                <p>Image Title</p>
+            </div>
+            <div class="gallery-thumbnail">
+                <img src="../images/placeholder-image.png" alt="">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quisquam perferendis repellendus recusandae
+            sapiente expedita, maiores officiis placeat quis in earum nostrum sequi accusantium. Harum, pariatur ab?
+            Commodi
+            non reiciendis laborum rem labore corporis tempore? Labore dicta, quod quaerat alias nesciunt vel, facilis
+            maiores ducimus soluta voluptates quam quis odio consequuntur ipsam necessitatibus amet unde. Soluta
+            repudiandae
+            repellat voluptatem ipsam, assumenda esse fugit voluptate quia laudantium, dolorem reiciendis incidunt
+            distinctio nemo reprehenderit odio, modi rem est labore libero minima et veritatis quisquam eos. Velit,
+            aliquam.
+            Eveniet nobis magni atque ipsam modi assumenda animi fuga excepturi saepe. Sequi officiis magni velit!</p>
+    </div>
+</body>
+
+</html>
