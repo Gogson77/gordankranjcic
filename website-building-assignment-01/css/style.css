@@ -1,0 +1,130 @@
+/************************************************ HEADER *********************************************/
+
+#menu-icon {
+  width: 1.5rem;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+#navigation-links a {
+  color: darkgray;
+  text-decoration: none;
+}
+
+#navigation-links a:hover {
+  color: black;
+}
+
+#navigation-links a:active {
+  text-decoration: underline;
+  text-decoration-color: darkgray;
+}
+
+/************************************************ HERO SECTION *********************************************/
+#hero-image {
+  width: 100%;
+}
+
+#hero-label {
+  /* background-color: #63c38f; */
+  /* background-color: #63c39082; */
+  background-color: #3f78598c;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  width: 100%;
+}
+
+
+/** Extra Small <576px **/
+@media (max-width: 575px) {
+  #hero-label {
+    /* font-size: 14px;
+    left: 1%;
+    top: 32%; */
+    /* width: 50%; */
+  }
+}
+
+/** Small ≥576px **/
+@media (min-width: 576px) {
+  #hero-label {
+    /* left: 3%;
+    top: 32%; */
+    /* width: 50%; */
+  }
+}
+/** Medium ≥768px **/
+@media (min-width: 768px) {
+  #hero-label {
+    /* font-size: 17px; */
+    /* width: 50%; */
+  }
+}
+/** Large ≥992px **/
+@media (min-width: 992px) {
+  #hero-label {
+    /* left: 27%;
+    top: 22%; */
+    /* width: 56%; */
+  }
+}
+/** Extra Large ≥1200px **/
+@media (min-width: 1200px) {
+  #hero-label {
+    /* font-size: 19px;
+    left: 29%;
+    top: 22%; */
+    /* width: 48%; */
+
+  }
+}
+
+
+/************************************************ INTRO SECTION *********************************************/
+
+
+/************************************************ RECENT SECTION *********************************************/
+
+#recent-section a,
+#blog-section a {
+  color: black;
+  text-decoration: none;
+}
+
+#recent-section a:hover,
+#blog-section a:hover {
+  color: rgba(0, 0, 0, 0.485);
+}
+
+#recent-section a:active,
+#blog-section a:active {
+  text-decoration: underline;
+}
+
+/************************************************ BLOG SECTION *********************************************/
+
+
+/************************************************ FOOTER  *********************************************/
+footer {
+  background-color: black;
+}
+
+footer a {
+  color:white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: darkgray;
+}
+
+footer a:active {
+  text-decoration: underline; 
+}
+
+footer hr {
+  margin: 8px 0;
+}
