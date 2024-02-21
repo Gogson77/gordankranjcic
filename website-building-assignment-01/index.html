@@ -18,11 +18,14 @@
         <div class="col 12 text-center">
           <nav>
             <div><a class="mobile-menu-item h3 text-decoration-none text-uppercase" href="#">Home</a></div>
-            <div class="my-3"><a class="mobile-menu-item h3 text-decoration-none text-uppercase" href="#">Portfolio</a></div>
+            <div class="my-3"><a class="mobile-menu-item h3 text-decoration-none text-uppercase" href="#">Portfolio</a>
+            </div>
             <div><a class="mobile-menu-item h3 text-decoration-none text-uppercase" href="#">Staff</a></div>
-            <div class="my-3"><a class="mobile-menu-item h3 text-decoration-none text-uppercase" href="#">Features</a></div>
+            <div class="my-3"><a class="mobile-menu-item h3 text-decoration-none text-uppercase" href="#">Features</a>
+            </div>
             <div><a class="mobile-menu-item h3 text-decoration-none text-uppercase" href="#">Blog</a></div>
-            <div class="my-3"><a class="mobile-menu-item h3 text-decoration-none text-uppercase" href="#">Contact</a></div>
+            <div class="my-3"><a class="mobile-menu-item h3 text-decoration-none text-uppercase" href="#">Contact</a>
+            </div>
             <div><a class="mobile-menu-item h3 text-decoration-none text-uppercase" href="#">Download</a></div>
           </nav>
         </div>
@@ -30,8 +33,8 @@
     </div>
   </div>
 
-  <header id="header-section">
-    <div class="container p-3">
+  <header id="header-section" class="p-3">
+    <div class="container">
       <div class="row align-items-center">
         <div class="col-6 col-md-4">
           <div id="header-logo">
@@ -47,9 +50,9 @@
           <a class="mx-md-1 mx-lg-2 mx-xl-3" href="#">Contact</a>
           <a class="" href="#">Download</a>
         </div>
-        <div class="col-6 d-md-none text-end m-0 p-0 h3 mt-1">
+        <div id="menu-set" class="col-6 d-md-none text-end m-0 p-0 mt-1">
           <a id="menu-btn" href="#"><img id="menu-icon" src="imgs/menu.png" alt="menu icon"></a>
-          <a id="menu-link" class="text-decoration-none text-muted" href="#">Menu</a>
+          <a id="menu-text" class="" href="#">Menu</a>
         </div>
       </div>
     </div>
@@ -61,7 +64,8 @@
         <div class="col-12">
           <img id="hero-image" class="img-fluid" src="imgs/hero.jpg" alt="hero image">
           <!-- <div id="hero-label" class="position-absolute text-light p-3 fw-bold top-50 start-50 translate-middle text-center">We strive to make all of our creations exquisite.</div> -->
-          <div id="hero-label" class="position-absolute h4 p-3 fw-bold text-light">We strive to make all of our creations exquisite.</div>
+          <div id="hero-label" class="position-absolute h4 p-3 fw-bold text-light">We strive to make all of our
+            creations exquisite.</div>
         </div>
       </div>
     </div>
@@ -252,7 +256,7 @@
   <script>
     window.addEventListener("load", function () {
 
-      let menuBtn = document.getElementById("menu-btn");
+      let menuBtn = document.getElementById("menu-set");
       let mobileMenu = document.getElementById("mobile-menu");
       let closeBtn = document.getElementById("close-btn");
 
@@ -263,14 +267,52 @@
       closeBtn.addEventListener("click", function () {
         mobileMenu.style.display = "none";
       });
-      
+
       let mobileMenuItems = document.getElementsByClassName("mobile-menu-item");
-      
+
       for (let i = 0; i < mobileMenuItems.length; i++) {
         mobileMenuItems[i].addEventListener("click", function () {
           mobileMenu.style.display = "none";
         });
       }
+
+      // solid-header
+
+      let heroSection = document.getElementById("hero-section")
+      let heroSectionHeight = heroSection.clientHeight;
+      let header = document.getElementById("header-section");
+      let menuIcon = document.getElementById("menu-icon");
+
+      document.addEventListener("scroll", function () {
+
+        if (document.documentElement.scrollTop > heroSectionHeight) {
+          if (!header.classList.contains("solid-header")) {
+            header.classList.add("solid-header");
+            menuIcon.setAttribute("src", "imgs/menu-white.png");
+          };
+
+        } else {
+          if (header.classList.contains("solid-header")) {
+            header.classList.remove("solid-header");
+            menuIcon.setAttribute("src", "imgs/menu.png");
+
+          }
+        };
+
+      });
+
+      menuIcon.addEventListener("mouseover", function () {
+        menuIcon.src = "imgs/menu-gray.png";
+      });
+
+      menuIcon.addEventListener("mouseout", function () {
+        if (header.classList.contains("solid-header")) {
+          menuIcon.src = "imgs/menu-white.png";
+        } else {
+          menuIcon.src = "imgs/menu.png";
+        }
+      });
+
     });
   </script>
 </body>

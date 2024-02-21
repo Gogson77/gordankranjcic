@@ -1,10 +1,33 @@
+/************************************************ MOBILE MENU *********************************************/
+
+#mobile-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #312423ed;
+  z-index: 2;
+  display: none;
+}
+
+#mobile-menu a {
+  color: white;
+}
+
+#mobile-menu a:hover {
+  color: rgb(175, 171, 171);
+}
+
+#mobile-menu #close-btn {
+  position: absolute;
+  right: 29px;
+  top: 12px;
+  width: 36px;
+}
+
 /************************************************ HEADER *********************************************/
 
-#menu-icon {
-  width: 1.5rem;
-  margin-right: 5px;
-  margin-bottom: 5px;
-}
 
 #navigation-links a {
   color: darkgray;
@@ -18,6 +41,50 @@
 #navigation-links a:active {
   text-decoration: underline;
   text-decoration-color: darkgray;
+}
+
+#menu-icon {
+  width: 1.5rem;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+#menu-set a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+#menu-set a:hover {
+  color: darkgray;
+}
+
+.solid-header {
+  position: fixed;
+  width: 100%;
+  background-color: #3f7859;
+  z-index: 1;
+  transition: 1.4s ease;
+}
+
+.solid-header h1 {
+  color: white;
+}
+
+.solid-header #navigation-links a {
+  color: white;
+}
+
+.solid-header #navigation-links a:hover {
+  color: darkgray;
+}
+
+.solid-header #menu-text {
+  color: white;
+}
+
+.solid-header a:hover {
+  color: darkgray;
 }
 
 /************************************************ HERO SECTION *********************************************/
@@ -130,32 +197,4 @@ footer a:active {
 
 footer hr {
   margin: 8px 0;
-}
-
-/************************************************ MOBILE MENU *********************************************/
-
-#mobile-menu {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #312423ed;
-  z-index: 2;
-  display: none;
-}
-
-#mobile-menu a {
-  color: white;
-}
-
-#mobile-menu a:hover {
-  color: rgb(175, 171, 171);
-}
-
-#mobile-menu #close-btn {
-  position: absolute;
-  right: 29px;
-  top: 12px;
-  width: 36px;
 }
