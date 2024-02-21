@@ -28,7 +28,6 @@
 
 /************************************************ HEADER *********************************************/
 
-
 #navigation-links a {
   color: darkgray;
   text-decoration: none;
@@ -43,12 +42,6 @@
   text-decoration-color: darkgray;
 }
 
-#menu-icon {
-  width: 1.5rem;
-  margin-right: 5px;
-  margin-bottom: 5px;
-}
-
 #menu-set a {
   font-size: 20px;
   text-decoration: none;
@@ -59,6 +52,12 @@
   color: darkgray;
 }
 
+#menu-icon {
+  width: 1.5rem;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
 .solid-header {
   position: fixed;
   width: 100%;
@@ -67,7 +66,7 @@
   transition: 1.4s ease;
 }
 
-.solid-header h1 {
+.solid-header #header-logo {
   color: white;
 }
 
