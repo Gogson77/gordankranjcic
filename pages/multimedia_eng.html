@@ -1,568 +1,644 @@
 <html>
 
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:Wingdings;
-	panose-1:5 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
-@font-face
-	{font-family:Cambria;
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:0cm;
-	text-align:justify;
-	text-justify:inter-ideograph;
-	line-height:105%;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-h1
-	{mso-style-link:"Heading 1 Char";
-	margin-top:16.0pt;
-	margin-right:0cm;
-	margin-bottom:2.0pt;
-	margin-left:0cm;
-	text-align:justify;
-	text-justify:inter-ideograph;
-	line-height:105%;
-	page-break-after:avoid;
-	font-size:14.0pt;
-	font-family:"Cambria",serif;
-	text-transform:uppercase;
-	letter-spacing:.2pt;}
-a:link, span.MsoHyperlink
-	{color:blue;
-	text-decoration:underline;}
-p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:36.0pt;
-	text-align:justify;
-	text-justify:inter-ideograph;
-	line-height:105%;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:36.0pt;
-	text-align:justify;
-	text-justify:inter-ideograph;
-	line-height:105%;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:36.0pt;
-	text-align:justify;
-	text-justify:inter-ideograph;
-	line-height:105%;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:36.0pt;
-	text-align:justify;
-	text-justify:inter-ideograph;
-	line-height:105%;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-span.Heading1Char
-	{mso-style-name:"Heading 1 Char";
-	mso-style-link:"Heading 1";
-	font-family:"Cambria",serif;
-	text-transform:uppercase;
-	letter-spacing:.2pt;
-	font-weight:bold;}
-.MsoChpDefault
-	{font-family:"Calibri",sans-serif;}
-.MsoPapDefault
-	{margin-bottom:8.0pt;
-	text-align:justify;
-	text-justify:inter-ideograph;
-	line-height:105%;}
-@page WordSection1
-	{size:595.5pt 842.0pt;
-	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
-div.WordSection1
-	{page:WordSection1;}
-@page WordSection2
-	{size:595.5pt 842.0pt;
-	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
-div.WordSection2
-	{page:WordSection2;}
- /* List Definitions */
- ol
-	{margin-bottom:0cm;}
-ul
-	{margin-bottom:0cm;}
--->
-</style>
+	<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+	<meta name=Generator content="Microsoft Word 15 (filtered)">
+	<style>
+		<!--
+		/* Font Definitions */
+		@font-face {
+			font-family: Wingdings;
+			panose-1: 5 0 0 0 0 0 0 0 0 0;
+		}
+
+		@font-face {
+			font-family: "Cambria Math";
+			panose-1: 2 4 5 3 5 4 6 3 2 4;
+		}
+
+		@font-face {
+			font-family: Calibri;
+			panose-1: 2 15 5 2 2 2 4 3 2 4;
+		}
+
+		@font-face {
+			font-family: Cambria;
+			panose-1: 2 4 5 3 5 4 6 3 2 4;
+		}
+
+		/* Style Definitions */
+		p.MsoNormal,
+		li.MsoNormal,
+		div.MsoNormal {
+			margin-top: 0cm;
+			margin-right: 0cm;
+			margin-bottom: 8.0pt;
+			margin-left: 0cm;
+			text-align: justify;
+			text-justify: inter-ideograph;
+			line-height: 105%;
+			font-size: 11.0pt;
+			font-family: "Calibri", sans-serif;
+		}
+
+		h1 {
+			mso-style-link: "Heading 1 Char";
+			margin-top: 16.0pt;
+			margin-right: 0cm;
+			margin-bottom: 2.0pt;
+			margin-left: 0cm;
+			text-align: justify;
+			text-justify: inter-ideograph;
+			line-height: 105%;
+			page-break-after: avoid;
+			font-size: 14.0pt;
+			font-family: "Cambria", serif;
+			text-transform: uppercase;
+			letter-spacing: .2pt;
+		}
+
+		a:link,
+		span.MsoHyperlink {
+			color: blue;
+			text-decoration: underline;
+		}
+
+		p.MsoListParagraph,
+		li.MsoListParagraph,
+		div.MsoListParagraph {
+			margin-top: 0cm;
+			margin-right: 0cm;
+			margin-bottom: 8.0pt;
+			margin-left: 36.0pt;
+			text-align: justify;
+			text-justify: inter-ideograph;
+			line-height: 105%;
+			font-size: 11.0pt;
+			font-family: "Calibri", sans-serif;
+		}
+
+		p.MsoListParagraphCxSpFirst,
+		li.MsoListParagraphCxSpFirst,
+		div.MsoListParagraphCxSpFirst {
+			margin-top: 0cm;
+			margin-right: 0cm;
+			margin-bottom: 0cm;
+			margin-left: 36.0pt;
+			text-align: justify;
+			text-justify: inter-ideograph;
+			line-height: 105%;
+			font-size: 11.0pt;
+			font-family: "Calibri", sans-serif;
+		}
+
+		p.MsoListParagraphCxSpMiddle,
+		li.MsoListParagraphCxSpMiddle,
+		div.MsoListParagraphCxSpMiddle {
+			margin-top: 0cm;
+			margin-right: 0cm;
+			margin-bottom: 0cm;
+			margin-left: 36.0pt;
+			text-align: justify;
+			text-justify: inter-ideograph;
+			line-height: 105%;
+			font-size: 11.0pt;
+			font-family: "Calibri", sans-serif;
+		}
+
+		p.MsoListParagraphCxSpLast,
+		li.MsoListParagraphCxSpLast,
+		div.MsoListParagraphCxSpLast {
+			margin-top: 0cm;
+			margin-right: 0cm;
+			margin-bottom: 8.0pt;
+			margin-left: 36.0pt;
+			text-align: justify;
+			text-justify: inter-ideograph;
+			line-height: 105%;
+			font-size: 11.0pt;
+			font-family: "Calibri", sans-serif;
+		}
+
+		span.Heading1Char {
+			mso-style-name: "Heading 1 Char";
+			mso-style-link: "Heading 1";
+			font-family: "Cambria", serif;
+			text-transform: uppercase;
+			letter-spacing: .2pt;
+			font-weight: bold;
+		}
+
+		.MsoChpDefault {
+			font-family: "Calibri", sans-serif;
+		}
+
+		.MsoPapDefault {
+			margin-bottom: 8.0pt;
+			text-align: justify;
+			text-justify: inter-ideograph;
+			line-height: 105%;
+		}
+
+		@page WordSection1 {
+			size: 595.5pt 842.0pt;
+			margin: 72.0pt 72.0pt 72.0pt 72.0pt;
+		}
+
+		div.WordSection1 {
+			page: WordSection1;
+		}
+
+		@page WordSection2 {
+			size: 595.5pt 842.0pt;
+			margin: 72.0pt 72.0pt 72.0pt 72.0pt;
+		}
+
+		div.WordSection2 {
+			page: WordSection2;
+		}
+
+		/* List Definitions */
+		ol {
+			margin-bottom: 0cm;
+		}
+
+		ul {
+			margin-bottom: 0cm;
+		}
+		-->
+	</style>
 
 </head>
 
 <body lang=BS-LATN-BA link=blue vlink=purple style='word-wrap:break-word'>
 
-<div class=WordSection1>
+	<a href="../index.html">Back</a>
 
-<h1><span lang=EN-GB>Creative Media </span><span lang=EN-GB style='letter-spacing:
+
+	<div class=WordSection1>
+
+		<h1><span lang=EN-GB>Creative Media </span><span lang=EN-GB style='letter-spacing:
 -.1pt'>Manager </span></h1>
 
-<p class=MsoNormal><span lang=EN><a
-href="https://drive.google.com/file/d/1OOigNdRjmZOeCnkbz3bMDW34g_kcqgVO/view?usp=sharing"><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>  </span><span
-lang=EN><a href="https://youtu.be/QNOQo4pJJO0"><span lang=EN-GB
-style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>  </span><span
-lang=EN><a
-href="https://drive.google.com/drive/folders/1wvspPFioze8HeqlXLimxYaaNdc4iFHqj?usp=sharing"><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>  </span><span
-lang=EN><a href="https://youtu.be/O8MLVhpW3Hc"><span lang=EN-GB
-style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>  </span><span
-lang=EN><a
-href="https://drive.google.com/file/d/1-bMsWKRYZav72DyH-0qnc6BKIlCHOaxn/view?usp=sharing"><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>  </span><span
-lang=EN><a
-href="https://drive.google.com/drive/folders/1wvspPFioze8HeqlXLimxYaaNdc4iFHqj?usp=sharing"><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>  </span><span
-lang=EN><a
-href="https://drive.google.com/file/d/1PU9XGcoHjzrlVRIhQ7fSDaCWY_kYVDjQ/view?usp=sharing"><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'> </span></span><span
-lang=EN><a
-href="https://drive.google.com/file/d/1MvYG3iMQbNLwckuUXFIUsxGhrSBnWxjW/view?usp=sharing"><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'> </span></span><span
-lang=EN><a
-href="https://drive.google.com/file/d/1uxzxb_HFhm8Xdx-xA62J-o2Kytr7cHm6/view"><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'> </span></span><span
-lang=EN><a
-href="https://drive.google.com/file/d/176fvO6H2REIxA5yTMqIG1Pl-f_C3U9Ev/view?usp=sharing"><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'> </span></span><span
-lang=EN><a
-href="https://drive.google.com/file/d/1M1FtKhBFxQvhL338-ZB4_9jNmeKsXN0_/view?usp=sharing"><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;letter-spacing:-.1pt'> </span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'> </span><span
-lang=EN><a
-href="https://drive.google.com/file/d/1jv5HYs6xEUf8g5zMjHe2Q3t2GrPVa_G2/view?usp=sharing"><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'> </span></span><span
-lang=EN><a
-href="https://drive.google.com/drive/folders/1NsFWRFB0EyVtTfCKYTXkCHdtWCZSsqU_?usp=sharing"><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>  </span><span
-lang=EN><a href="https://soundcloud.com/sarajevodrumorchestra"><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'> </span></span><span
-lang=EN><a href="https://youtu.be/7b00UvudCik"><span lang=EN-GB
-style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'> </span></span><span
-lang=EN><a href="https://youtu.be/aVLBCDMclE0"><span lang=EN-GB
-style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'> </span></span><span
-lang=EN><a
-href="https://drive.google.com/file/d/1lyo_42y_6n5Yj8QhlvM4yfFi0ED3Kh6G/view?usp=sharing"><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'> </span></span><span
-lang=EN><a
-href="https://youtu.be/vwueI7sJaqs?list=PLs26QHMx8lqcgYsszDZH-OY3RM7Gmt8h9"><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'> </span></span><span
-lang=EN><a
-href="https://youtu.be/3bqFmWbEs8o?list=PLwcVv2cccJ4HTYKDZvl51Bqy1Dh2N7RwK"><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'> </span></span><span
-lang=EN><a
-href="https://youtu.be/PZKgemZJj1o?list=PLs26QHMx8lqduvQohXrdr3XRLAJHI3Ewr"><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'> </span></span><span
-lang=EN><a
-href="https://drive.google.com/drive/folders/19QPjXYORnMG-YRZfTOvAwuauUf6Uyu9v?usp=sharing"><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>  </span><span
-lang=EN><a
-href="https://drive.google.com/file/d/1AWNvfA9JeLuQUZbZYPw0deoQ89nBAz_S/view?usp=sharing"><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'> </span></span><span
-lang=EN><a href="https://www.youtube.com/user/SarajevoDrum"><span lang=EN-GB
-style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'> </span></span><span
-lang=EN><a href="https://www.facebook.com/sa.drum.orchestra"><span lang=EN-GB
-style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>  </span><span
-lang=EN><a href="https://www.facebook.com/bongox.gk"><span lang=EN-GB
-style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>  </span><span
-lang=EN><a href="https://youtu.be/w7ekpo-OfC8"><span lang=EN-GB
-style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'> </span></span><span
-lang=EN><a href="https://youtu.be/tJ0MwCaW7_4"><span lang=EN-GB
-style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'> </span></span><span
-lang=EN><a href="https://youtu.be/viZxYUWVuBE"><span lang=EN-GB
-style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>  </span><span
-lang=EN><a href="https://youtu.be/ZHHBEXBOMaI"><span lang=EN-GB
-style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>  </span><span
-lang=EN><a
-href="https://drive.google.com/file/d/1gDGmvA70KxXDHzTKUISxPJWXf4-6h3jH/view?usp=sharing"><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'> </span></span><span
-lang=EN><a
-href="https://www.dropbox.com/s/e5isf19u06ynhvm/20170218_005554%20heels_1.mp4?dl=0"><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>  </span><span
-lang=EN><a href="https://youtu.be/A9nMiuQK3fE"><span lang=EN-GB
-style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>  </span><span
-lang=EN><a
-href="https://drive.google.com/file/d/1twRGqx3iVK73ilArrkP8Cr6RKE0Ri8H5/view?usp=sharing"><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'> </span></span><span
-lang=EN><a
-href="https://drive.google.com/file/d/1lBF8dW7NBUgsZibktFnnjxNpzrjlqvbA/view?usp=sharing"><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;letter-spacing:.1pt'> </span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'> </span><span
-lang=EN><a
-href="https://drive.google.com/file/d/0B1aWRYXxrI4hZEN2VEg5Vkx1Znc/view?usp=sharing&amp;resourcekey=0-9xOPynBUkUed_uPgJelB4A"><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'> </span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;letter-spacing:.1pt'> </span><span
-lang=EN><a href="https://youtu.be/OG-GBrjx1FY"><span lang=EN-GB
-style='font-size:14.0pt;line-height:105%;color:#0462C1;letter-spacing:-.5pt'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;letter-spacing:.05pt'> </span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'> </span><span
-lang=EN><a href="https://youtu.be/A17Yxwclt10"><span lang=EN-GB
-style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;letter-spacing:.3pt'> </span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'> </span><span
-lang=EN><a
-href="https://drive.google.com/file/d/1HEyq087IAz0c4qWkOQslbqoyyF5g2zfV/view?usp=sharing"><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>  </span><span
-lang=EN><a
-href="https://drive.google.com/file/d/1BS6F4x0qydU8_Kli3kx0HSYT3chv_GlP/view?usp=sharing"><span
-lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>•</span></a></span></p>
+		<p class=MsoNormal><span lang=EN><a
+					href="https://drive.google.com/file/d/1OOigNdRjmZOeCnkbz3bMDW34g_kcqgVO/view?usp=sharing"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½ </span><span lang=EN><a
+					href="https://youtu.be/QNOQo4pJJO0"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½ </span><span lang=EN><a
+					href="https://drive.google.com/drive/folders/1wvspPFioze8HeqlXLimxYaaNdc4iFHqj?usp=sharing"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½ </span><span lang=EN><a
+					href="https://youtu.be/O8MLVhpW3Hc"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½ </span><span lang=EN><a
+					href="https://drive.google.com/file/d/1-bMsWKRYZav72DyH-0qnc6BKIlCHOaxn/view?usp=sharing"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½ </span><span lang=EN><a
+					href="https://drive.google.com/drive/folders/1wvspPFioze8HeqlXLimxYaaNdc4iFHqj?usp=sharing"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½ </span><span lang=EN><a
+					href="https://drive.google.com/file/d/1PU9XGcoHjzrlVRIhQ7fSDaCWY_kYVDjQ/view?usp=sharing"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'>ï¿½</span></span><span lang=EN><a
+					href="https://drive.google.com/file/d/1MvYG3iMQbNLwckuUXFIUsxGhrSBnWxjW/view?usp=sharing"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'>ï¿½</span></span><span lang=EN><a
+					href="https://drive.google.com/file/d/1uxzxb_HFhm8Xdx-xA62J-o2Kytr7cHm6/view"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'>ï¿½</span></span><span lang=EN><a
+					href="https://drive.google.com/file/d/176fvO6H2REIxA5yTMqIG1Pl-f_C3U9Ev/view?usp=sharing"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'>ï¿½</span></span><span lang=EN><a
+					href="https://drive.google.com/file/d/1M1FtKhBFxQvhL338-ZB4_9jNmeKsXN0_/view?usp=sharing"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%;letter-spacing:-.1pt'> </span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span><span lang=EN><a
+					href="https://drive.google.com/file/d/1jv5HYs6xEUf8g5zMjHe2Q3t2GrPVa_G2/view?usp=sharing"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'>ï¿½</span></span><span lang=EN><a
+					href="https://drive.google.com/drive/folders/1NsFWRFB0EyVtTfCKYTXkCHdtWCZSsqU_?usp=sharing"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½ </span><span lang=EN><a
+					href="https://soundcloud.com/sarajevodrumorchestra"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'>ï¿½</span></span><span lang=EN><a
+					href="https://youtu.be/7b00UvudCik"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'>ï¿½</span></span><span lang=EN><a
+					href="https://youtu.be/aVLBCDMclE0"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'>ï¿½</span></span><span lang=EN><a
+					href="https://drive.google.com/file/d/1lyo_42y_6n5Yj8QhlvM4yfFi0ED3Kh6G/view?usp=sharing"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'>ï¿½</span></span><span lang=EN><a
+					href="https://youtu.be/vwueI7sJaqs?list=PLs26QHMx8lqcgYsszDZH-OY3RM7Gmt8h9"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'>ï¿½</span></span><span lang=EN><a
+					href="https://youtu.be/3bqFmWbEs8o?list=PLwcVv2cccJ4HTYKDZvl51Bqy1Dh2N7RwK"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'>ï¿½</span></span><span lang=EN><a
+					href="https://youtu.be/PZKgemZJj1o?list=PLs26QHMx8lqduvQohXrdr3XRLAJHI3Ewr"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'>ï¿½</span></span><span lang=EN><a
+					href="https://drive.google.com/drive/folders/19QPjXYORnMG-YRZfTOvAwuauUf6Uyu9v?usp=sharing"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½ </span><span lang=EN><a
+					href="https://drive.google.com/file/d/1AWNvfA9JeLuQUZbZYPw0deoQ89nBAz_S/view?usp=sharing"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'>ï¿½</span></span><span lang=EN><a
+					href="https://www.youtube.com/user/SarajevoDrum"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'>ï¿½</span></span><span lang=EN><a
+					href="https://www.facebook.com/sa.drum.orchestra"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½ </span><span lang=EN><a
+					href="https://www.facebook.com/bongox.gk"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½ </span><span lang=EN><a
+					href="https://youtu.be/w7ekpo-OfC8"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'>ï¿½</span></span><span lang=EN><a
+					href="https://youtu.be/tJ0MwCaW7_4"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'>ï¿½</span></span><span lang=EN><a
+					href="https://youtu.be/viZxYUWVuBE"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½ </span><span lang=EN><a
+					href="https://youtu.be/ZHHBEXBOMaI"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½ </span><span lang=EN><a
+					href="https://drive.google.com/file/d/1gDGmvA70KxXDHzTKUISxPJWXf4-6h3jH/view?usp=sharing"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'>ï¿½</span></span><span lang=EN><a
+					href="https://www.dropbox.com/s/e5isf19u06ynhvm/20170218_005554%20heels_1.mp4?dl=0"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½ </span><span lang=EN><a
+					href="https://youtu.be/A9nMiuQK3fE"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½ </span><span lang=EN><a
+					href="https://drive.google.com/file/d/1twRGqx3iVK73ilArrkP8Cr6RKE0Ri8H5/view?usp=sharing"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%'> <span style='color:#0462C1'>ï¿½</span></span><span lang=EN><a
+					href="https://drive.google.com/file/d/1lBF8dW7NBUgsZibktFnnjxNpzrjlqvbA/view?usp=sharing"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%;letter-spacing:.1pt'> </span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span><span lang=EN><a
+					href="https://drive.google.com/file/d/0B1aWRYXxrI4hZEN2VEg5Vkx1Znc/view?usp=sharing&amp;resourcekey=0-9xOPynBUkUed_uPgJelB4A"><span
+						lang=EN-GB style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%;color:#0462C1'> </span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%;letter-spacing:.1pt'>ï¿½</span><span lang=EN><a
+					href="https://youtu.be/OG-GBrjx1FY"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1;letter-spacing:-.5pt'>ï¿½</span></a></span><span
+				lang=EN-GB style='font-size:14.0pt;line-height:105%;letter-spacing:.05pt'> </span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span><span lang=EN><a
+					href="https://youtu.be/A17Yxwclt10"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%;letter-spacing:.3pt'> </span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span><span lang=EN><a
+					href="https://drive.google.com/file/d/1HEyq087IAz0c4qWkOQslbqoyyF5g2zfV/view?usp=sharing"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span><span lang=EN-GB
+				style='font-size:14.0pt;line-height:105%;color:#0462C1'> ï¿½</span><span lang=EN><a
+					href="https://drive.google.com/file/d/1BS6F4x0qydU8_Kli3kx0HSYT3chv_GlP/view?usp=sharing"><span lang=EN-GB
+						style='font-size:14.0pt;line-height:105%;color:#0462C1'>ï¿½</span></a></span></p>
 
-<p class=MsoNormal><span lang=EN-GB>Graphic<span style='letter-spacing:-.2pt'> </span>design<span
-style='letter-spacing:-.15pt'> </span>and<span style='letter-spacing:-.15pt'> </span>music
-video<span style='letter-spacing:-.15pt'> </span><span style='letter-spacing:
+		<p class=MsoNormal><span lang=EN-GB>Graphic<span style='letter-spacing:-.2pt'> </span>design<span
+					style='letter-spacing:-.15pt'> </span>and<span style='letter-spacing:-.15pt'> </span>music
+				video<span style='letter-spacing:-.15pt'> </span><span style='letter-spacing:
 -.1pt'>production </span></span></p>
 
-<p class=MsoNormal><span lang=EN>Expert in graphic design and video production
-with advanced training in Adobe Premiere Pro. </span></p>
-
-<p class=MsoNormal><span lang=EN>Proficient in various non-linear video editing
-software, including Vegas Pro, Final Cut Pro, and DaVinci Resolve. Achieved
-high marks in animation and design courses such as 3D Studio Max (CAD), Adobe
-Animation (advanced web design), and Adobe After Effects (cinematic effects).  </span></p>
-
-<p class=MsoNormal><span lang=EN>Skilled in directing, producing, shooting, and
-editing music videos and reports. </span></p>
-
-<p class=MsoNormal><span lang=EN>Formally educated in graphic design, focusing
-on CAD, vector, and raster graphics processing. Over 25 years of experience in
-graphic arts, utilizing tools like AutoCAD, CorelDraw, Adobe Illustrator,
-Photoshop, Lightroom, and InDesign. Expertise includes creating promotional
-materials such as logos, business cards, CD covers, T-shirt prints, brochures,
-posters, press kits, and content for web and social media. </span></p>
-
-<p class=MsoNormal><span lang=EN>Graduated in sound design and advanced music
-production under David Campos. Skilled in Digital Audio Workstations, including
-Presonus Studio One, Adobe Audition, Ableton, and Steinberg Cubase. Experience
-in composing, performing, recording, mixing, mastering, and publishing original
-music. Notable projects include audio-visual design for Porsche advertisements,
-Lottery commercials, and Sony PlayStation game music. Multi-instrumentalist and
-music therapist with a portfolio in professional sound, photography, and video
-editing.</span></p>
-
-<p class=MsoNormal><span lang=EN>Communication, promotion, translation,
-management, organization. </span></p>
-
-<p class=MsoNormal><span lang=EN>Specialized in public relations (PR) and event
-management, with 25 years of experience working with corporations globally and
-locally (BiH) on over 1,200 events for more than 200 clients across 80 cities.
-Event highlights include SFOR (6,000+ attendees), EXIT Fest (3 events), and the
-Meet Work Club Loft (co-ownership and technical management). Currently
-collaborating on projects for Sarajevo Film Festival, B#ART, Nishvile Jazz
-Fest, and Rain.</span></p>
-
-<p class=MsoNormal><span lang=EN>Organizer and facilitator for Samba Team
-building, coordinating events for over 120 participants with own instruments.
-Project management experience includes partnerships with Worldvision, World
-Bank, and the embassies of the Netherlands and Belgium. Developed and led
-creative workshops, training hundreds of amateurs and professionals. </span></p>
-
-<p class=MsoNormal><span lang=EN>Highly proficient in English, both spoken and
-written, with extensive experience translating for Ve&#269;ernje Novine, FTV
-television, and OSCE-affiliated companies. Daily English use while working
-abroad for Musicians Without Borders, War Child Amsterdam, and in personal
-international communications.</span></p>
-
-<p class=MsoNormal><span lang=EN>Since 2000, coordinated events for the
-Sarajevo Drum Orchestra, SFOR, and other organizations. Extensive experience in
-event preparation, quality control, subcontractor coordination, and managing
-post-event financial obligations. </span></p>
-
-<p class=MsoNormal><span lang=EN>Skilled in the entire event management
-process, including advocacy, permits, fundraising, stage setup, technical rider
-preparation, equipment monitoring, insurance, accommodation, scheduling, and
-media reporting. Managed public relations, social media campaigns, and designed
-promotional materials (posters, flyers, brochures).</span></p>
-
-</div>
-
-<span lang=EN style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><br
-clear=all style='page-break-before:always'>
-</span>
-
-<div class=WordSection2>
-
-<p class=MsoNormal><span lang=EN>Creative Media Manager:</span></p>
-
-<p class=MsoListParagraphCxSpFirst style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>2007 Arts2Business (Fund for Arts and Culture, USA)</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>2006 Project Cycle Management by Prof. Dr. Kasim
-Tati&#263;</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>2006 PR and Communication by Steve Ellis, UK</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Art Director - Sarajevo Drum Orchestra (2000 -
-Present, 22+ years) Roles: Music Director, Event Manager, Booking, Promotion</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Project Coordinator - Musicians Without Borders
-(2000 - 2006) Led music conferences, managed branches, and developed projects
-including 'Three Schools' and 'Rhythms of the World'.</span></p>
-
-<p class=MsoListParagraphCxSpLast style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Creative Music Workshop Leader - War Child UK (1998
-- 2006)</span></p>
-
-<p class=MsoNormal><span lang=EN>Education:</span></p>
-
-<p class=MsoListParagraphCxSpFirst style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Master of Science in Computer and Information Technology,
-Faculty of Computer Science, University PIM Banja Luka, 2024</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Bachelor of Science in Computer and Information Technology,
-Faculty of Computer Science, ITEP, 2021</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Advanced Music Production (David Campos) - Sound
-Design and Music Production, 2021</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Front-End JavaScript Development, IT Academy, LINK
-group, 2024</span></p>
-
-<p class=MsoListParagraphCxSpLast style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>PHP Web Development, IT Academy, LINK group, 2021</span></p>
-
-<p class=MsoNormal><span lang=EN>English Interpreter:</span></p>
-
-<p class=MsoListParagraphCxSpFirst style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Upper-Intermediate - Cambridge University</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>English Translator for RTV FBiH (1998) - Worked in
-Foreign Politics Program</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>English Translator, Ve&#269;ernje Novine (Nov 1997
-- Sep 1998) - Translated articles to BHS Language</span></p>
-
-<p class=MsoListParagraphCxSpLast style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Interpreter for OSCE (Sep - Oct 1997) - Assisted
-International Supervisor in first Bosnian elections</span></p>
-
-<p class=MsoNormal><span lang=EN>Technical Services:</span></p>
-
-<p class=MsoListParagraphCxSpFirst style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>User Experience Designer - ZIRA Smart Business
-Support Systems (Apr - Dec 2022)</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Network Administrator - Independent Bureau for
-Humanitarian Issues (IBHI, 2003 - 2004)</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Elections Counting Center Supervisor - OSCE (Aug -
-Oct 2008)</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Data Entry Clerk - OSCE (2000 - 2003)</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Graphic Designer </span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Video Producer </span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Event Manager </span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Interpreter </span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Software Engineer </span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Project Manager</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Sys Net Admin </span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Tech Services </span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Stage Manager </span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Music Producer </span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Studio Recording Artist </span></p>
-
-<p class=MsoListParagraphCxSpLast style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Multi Percussionist</span></p>
-
-<p class=MsoNormal><span lang=EN>Professional qualifications include education
-as an engineer in RIT ITEP and master's degree from FRN PIM, with expertise in
-UI, JavaScript, and PHP web development. Career options include:</span></p>
-
-<p class=MsoListParagraphCxSpFirst style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Graphic Design Engineer</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>UI/UX Designer</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Video Production Editor </span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>User Interface Designer</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Web Designer</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Special Effects Designer</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Design Project Manager</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>IT Administrator</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Software Engineer</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Software Developer</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>System Developer</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Programmer</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Web Administrator</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Database Administrator</span></p>
-
-<p class=MsoListParagraphCxSpLast style='margin-left:18.0pt;text-indent:-18.0pt'><span
-lang=EN style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN>Infrastructure and Software Architect</span></p>
-
-<p class=MsoNormal><span lang=EN>Gordan Kranjcic +38761211929 <a
-href="gordankranjcic@gmail.com%20">gordankranjcic@gmail.com</a> <a
-href="https://www.linkedin.com/in/gordankranjcic/">https://www.linkedin.com/in/gordankranjcic/</a></span></p>
-
-</div>
+		<p class=MsoNormal><span lang=EN>Expert in graphic design and video production
+				with advanced training in Adobe Premiere Pro. </span></p>
+
+		<p class=MsoNormal><span lang=EN>Proficient in various non-linear video editing
+				software, including Vegas Pro, Final Cut Pro, and DaVinci Resolve. Achieved
+				high marks in animation and design courses such as 3D Studio Max (CAD), Adobe
+				Animation (advanced web design), and Adobe After Effects (cinematic effects). ï¿½</span></p>
+
+		<p class=MsoNormal><span lang=EN>Skilled in directing, producing, shooting, and
+				editing music videos and reports. </span></p>
+
+		<p class=MsoNormal><span lang=EN>Formally educated in graphic design, focusing
+				on CAD, vector, and raster graphics processing. Over 25 years of experience in
+				graphic arts, utilizing tools like AutoCAD, CorelDraw, Adobe Illustrator,
+				Photoshop, Lightroom, and InDesign. Expertise includes creating promotional
+				materials such as logos, business cards, CD covers, T-shirt prints, brochures,
+				posters, press kits, and content for web and social media. </span></p>
+
+		<p class=MsoNormal><span lang=EN>Graduated in sound design and advanced music
+				production under David Campos. Skilled in Digital Audio Workstations, including
+				Presonus Studio One, Adobe Audition, Ableton, and Steinberg Cubase. Experience
+				in composing, performing, recording, mixing, mastering, and publishing original
+				music. Notable projects include audio-visual design for Porsche advertisements,
+				Lottery commercials, and Sony PlayStation game music. Multi-instrumentalist and
+				music therapist with a portfolio in professional sound, photography, and video
+				editing.</span></p>
+
+		<p class=MsoNormal><span lang=EN>Communication, promotion, translation,
+				management, organization. </span></p>
+
+		<p class=MsoNormal><span lang=EN>Specialized in public relations (PR) and event
+				management, with 25 years of experience working with corporations globally and
+				locally (BiH) on over 1,200 events for more than 200 clients across 80 cities.
+				Event highlights include SFOR (6,000+ attendees), EXIT Fest (3 events), and the
+				Meet Work Club Loft (co-ownership and technical management). Currently
+				collaborating on projects for Sarajevo Film Festival, B#ART, Nishvile Jazz
+				Fest, and Rain.</span></p>
+
+		<p class=MsoNormal><span lang=EN>Organizer and facilitator for Samba Team
+				building, coordinating events for over 120 participants with own instruments.
+				Project management experience includes partnerships with Worldvision, World
+				Bank, and the embassies of the Netherlands and Belgium. Developed and led
+				creative workshops, training hundreds of amateurs and professionals. </span></p>
+
+		<p class=MsoNormal><span lang=EN>Highly proficient in English, both spoken and
+				written, with extensive experience translating for Ve&#269;ernje Novine, FTV
+				television, and OSCE-affiliated companies. Daily English use while working
+				abroad for Musicians Without Borders, War Child Amsterdam, and in personal
+				international communications.</span></p>
+
+		<p class=MsoNormal><span lang=EN>Since 2000, coordinated events for the
+				Sarajevo Drum Orchestra, SFOR, and other organizations. Extensive experience in
+				event preparation, quality control, subcontractor coordination, and managing
+				post-event financial obligations. </span></p>
+
+		<p class=MsoNormal><span lang=EN>Skilled in the entire event management
+				process, including advocacy, permits, fundraising, stage setup, technical rider
+				preparation, equipment monitoring, insurance, accommodation, scheduling, and
+				media reporting. Managed public relations, social media campaigns, and designed
+				promotional materials (posters, flyers, brochures).</span></p>
+
+	</div>
+
+	<span lang=EN style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><br clear=all
+			style='page-break-before:always'>
+	</span>
+
+	<div class=WordSection2>
+
+		<p class=MsoNormal><span lang=EN>Creative Media Manager:</span></p>
+
+		<p class=MsoListParagraphCxSpFirst style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>2007 Arts2Business (Fund for Arts and Culture, USA)</span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>2006 Project Cycle Management by Prof. Dr. Kasim
+				Tati&#263;</span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>2006 PR and Communication by Steve Ellis, UK</span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Art Director - Sarajevo Drum Orchestra (2000 -
+				Present, 22+ years) Roles: Music Director, Event Manager, Booking, Promotion</span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Project Coordinator - Musicians Without Borders
+				(2000 - 2006) Led music conferences, managed branches, and developed projects
+				including 'Three Schools' and 'Rhythms of the World'.</span></p>
+
+		<p class=MsoListParagraphCxSpLast style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Creative Music Workshop Leader - War Child UK (1998
+				- 2006)</span></p>
+
+		<p class=MsoNormal><span lang=EN>Education:</span></p>
+
+		<p class=MsoListParagraphCxSpFirst style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Master of Science in Computer and Information Technology,
+				Faculty of Computer Science, University PIM Banja Luka, 2024</span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Bachelor of Science in Computer and Information Technology,
+				Faculty of Computer Science, ITEP, 2021</span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Advanced Music Production (David Campos) - Sound
+				Design and Music Production, 2021</span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Front-End JavaScript Development, IT Academy, LINK
+				group, 2024</span></p>
+
+		<p class=MsoListParagraphCxSpLast style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>PHP Web Development, IT Academy, LINK group, 2021</span></p>
+
+		<p class=MsoNormal><span lang=EN>English Interpreter:</span></p>
+
+		<p class=MsoListParagraphCxSpFirst style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Upper-Intermediate - Cambridge University</span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>English Translator for RTV FBiH (1998) - Worked in
+				Foreign Politics Program</span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>English Translator, Ve&#269;ernje Novine (Nov 1997
+				- Sep 1998) - Translated articles to BHS Language</span></p>
+
+		<p class=MsoListParagraphCxSpLast style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Interpreter for OSCE (Sep - Oct 1997) - Assisted
+				International Supervisor in first Bosnian elections</span></p>
+
+		<p class=MsoNormal><span lang=EN>Technical Services:</span></p>
+
+		<p class=MsoListParagraphCxSpFirst style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>User Experience Designer - ZIRA Smart Business
+				Support Systems (Apr - Dec 2022)</span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Network Administrator - Independent Bureau for
+				Humanitarian Issues (IBHI, 2003 - 2004)</span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Elections Counting Center Supervisor - OSCE (Aug -
+				Oct 2008)</span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Data Entry Clerk - OSCE (2000 - 2003)</span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Graphic Designer </span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Video Producer </span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Event Manager </span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Interpreter </span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Software Engineer </span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Project Manager</span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Sys Net Admin </span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Tech Services </span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Stage Manager </span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Music Producer </span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Studio Recording Artist </span></p>
+
+		<p class=MsoListParagraphCxSpLast style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Multi Percussionist</span></p>
+
+		<p class=MsoNormal><span lang=EN>Professional qualifications include education
+				as an engineer in RIT ITEP and master's degree from FRN PIM, with expertise in
+				UI, JavaScript, and PHP web development. Career options include:</span></p>
+
+		<p class=MsoListParagraphCxSpFirst style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Graphic Design Engineer</span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>UI/UX Designer</span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Video Production Editor </span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>User Interface Designer</span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Web Designer</span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Special Effects Designer</span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Design Project Manager</span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>IT Administrator</span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Software Engineer</span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Software Developer</span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>System Developer</span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Programmer</span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Web Administrator</span></p>
+
+		<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Database Administrator</span></p>
+
+		<p class=MsoListParagraphCxSpLast style='margin-left:18.0pt;text-indent:-18.0pt'><span lang=EN
+				style='font-family:Symbol'>ï¿½<span
+					style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><span lang=EN>Infrastructure and Software Architect</span></p>
+
+		<p class=MsoNormal><span lang=EN>Gordan Kranjcic +38761211929 <a
+					href="gordankranjcic@gmail.com%20">gordankranjcic@gmail.com</a> <a
+					href="https://www.linkedin.com/in/gordankranjcic/">https://www.linkedin.com/in/gordankranjcic/</a></span></p>
+
+	</div>
 
 </body>
 
