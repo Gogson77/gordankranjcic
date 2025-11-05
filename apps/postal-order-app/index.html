@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .column {
+      flex: 1;
+      padding: 10px;
+      min-width: 300px;
+    }
+    .label-frame {
+      border: 1px solid #000;
+      padding: 7px;
+      margin-top: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 2px;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    .form-group input[type="checkbox"] {
+      width: auto;
+    }
+    .form-group input[type="file"] {
+      padding: 0;
+    }
+    fieldset {
+      margin-top: 12px;
+    }
+    legend {
+      font-weight: bold;
+    }
+
+  </style>
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <form id="uplatnicaForm">
+    <div class="container">
+      <div class="column">
+        <div class="form-group">
+          <label>Uplatio je (ime, adresa i telefon):</label>
+          <input name="ime" type="text" placeholder="Ime" value="Neko ime i prezime" pattern="[A-Za-z\s]+" title="Samo slovne oznake su dozvoljene" oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, '')">
+          <input name="adresa" type="text" placeholder="Adresa" value="Neka adresa">
+          <input name="telefon" type="text" placeholder="Telefon" value="061123456" pattern="\d*" title="Samo brojevi su dozvoljeni" oninput="this.value = this.value.replace(/\D/g, '')">
+        </div>
+        <div class="form-group">
+          <label>Svrha doznake:</label>
+          <input name="svrha_doznake" type="text" value="Uplata za fakultet 'XYZ' na ime korištenja biblioteke i informatičke opreme">
+        </div>
+        <div class="form-group">
+          <label>Primalac/Primatelj:</label>
+          <input name="primalac" type="text" value="JR Trezor KS Univerzitet u Sarajevu">
+        </div>
+        <div class="form-group">
+          <label>Mjesto i datum uplate:</label>
+          <input name="mjesto" type="text" placeholder="Mjesto" value="Sarajevo" pattern="[A-Za-z\s]+" title="Samo slovne oznake bez brojeva su dozvoljene" oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, '')">
+          <input name="datum_uplate" type="date" value="2025-04-01">
+        </div>
+        <div class="form-group">
+          <label>Potpis i pečat nalogodavca:</label>
+          <input name="potpis_nalogodavca" type="text" value="neki potpis nalogodavca" pattern="[A-Za-z\s]+" title="Samo slovne oznake su dozvoljene" oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, '')">
+        </div>
+        <div class="form-group">
+          <label>Pečat banke:</label>
+          <input name="pecat_banke" type="file" accept="image/*">
+        </div>
+        <div class="form-group">
+          <label>Potpis ovlaštenog lica:</label>
+          <input name="potpis_ovlastenog_lica" type="text" value="neki potpis ovlastenog lica" pattern="[A-Za-z\s]+" title="Samo slovne oznake su dozvoljene" oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, '')">
+        </div>
+      </div>
+      <div class="column">
+        <div class="form-group">
+          <label>Račun pošiljaoca/pošiljatelja:</label>
+          <input name="racun_posiljaoca" type="text" maxlength="16" value="1234123412341234" pattern="\d*" title="Samo brojevi su dozvoljeni" oninput="this.value = this.value.replace(/\D/g, '')">
+        </div>
+        <div class="form-group">
+          <label>Račun primaoca/primatelja:</label>
+          <input name="racun_primaoca" type="text" maxlength="16" value="141196530008475" pattern="\d*" title="Samo brojevi su dozvoljeni" oninput="this.value = this.value.replace(/\D/g, '')">
+        </div>
+        <div class="form-group">
+          <label>Iznos u KM:</label>
+          <input name="iznos" type="text" pattern="\d+(\.\d{1,2})?" value="100.00" title="Samo brojevi su dozvoljeni, sa najviše 2 decimale" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1').replace(/(\.\d{2})\d+/g, '$1')">
+          <input name="hitno" type="checkbox" checked> HITNO
+        </div>
+        <fieldset class="label-frame">
+          <legend>Samo za uplate javnih prihoda</legend>
+          <div class="container">
+            <div class="column">
+              <div class="form-group">
+                <label>Broj poreskog obveznika:</label>
+                <input name="broj_poreskog_obveznika" type="text" maxlength="13" value="1234567890123" pattern="\d*" title="Samo brojevi su dozvoljeni" oninput="this.value = this.value.replace(/\D/g, '')">
+              </div>
+              <div class="form-group">
+                <label>Vrsta prihoda:</label>
+                <input name="vrsta_prihoda" type="text" maxlength="6" value="72249" pattern="\d*" title="Samo brojevi su dozvoljeni" oninput="this.value = this.value.replace(/\D/g, '')">
+              </div>
+              <div class="form-group">
+                <label>Općina:</label>
+                <input name="opcina" type="text" maxlength="3" value="077" pattern="\d*" title="Samo brojevi su dozvoljeni" oninput="this.value = this.value.replace(/\D/g, '')">
+              </div>
+              <div class="form-group">
+                <label>Poziv na broj:</label>
+                <input name="poziv_na_broj" type="text" maxlength="10" value="000000020" pattern="\d*" title="Samo brojevi su dozvoljeni" oninput="this.value = this.value.replace(/\D/g, '')">
+              </div>
+            </div>
+            <div class="column">
+              <fieldset>
+                <legend>Porezni period</legend>
+                <div class="form-group">
+                  <label>Od:</label>
+                  <input name="porezni_period_od" type="date" value="2025-04-01">
+                </div>
+                <div class="form-group">
+                  <label>Do:</label>
+                  <input name="porezni_period_do" type="date" value="2025-04-01">
+                </div>
+              </fieldset>
+              <div class="form-group" style="margin-top: 17px;">
+                <label>Budžetska organizacija:</label>
+                <input name="budzetska_organizacija" type="text" maxlength="7" value="2104024" pattern="\d*" title="Samo brojevi su dozvoljeni" oninput="this.value = this.value.replace(/\D/g, '')">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+    <button type="submit">Sačuvaj</button>
+  </form>
+</body>
+</html>

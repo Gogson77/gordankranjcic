@@ -1,0 +1,17 @@
+{
+  "name": "03",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "5.1.0",
+    "pg": "^8.14.1"
+  }
+}

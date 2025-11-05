@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Unos novca */
+.novac-unos {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.novac-unos h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.novac-unos input {
+    padding: 15px;
+    font-size: 1.5em;
+    width: 200px;
+    border: 2px solid #667eea;
+    border-radius: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.novac-unos span {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.novac-unos button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.novac-unos button:hover {
+    background: #764ba2;
+    transform: scale(1.05);
+}
+
+/* Glavni panel */
+.glavni-panel {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Info panel */
+.info-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    color: white;
+}
+
+.krediti h3 {
+    margin-bottom: 10px;
+}
+
+.kredit-iznos {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.kraj-btn {
+    padding: 15px 25px;
+    font-size: 1em;
+    background: white;
+    color: #667eea;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.kraj-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Proizvodi grid */
+.proizvodi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.proizvod-kartica {
+    background: linear-gradient(145deg, #f0f0f0, #ffffff);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.proizvod-kartica:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    border-color: #667eea;
+}
+
+.proizvod-kartica.rasprodat {
+    opacity: 0.5;
+    background: #e0e0e0;
+}
+
+.proizvod-kartica.rasprodat:hover {
+    transform: none;
+    cursor: not-allowed;
+}
+
+.proizvod-naziv {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.proizvod-cijena {
+    font-size: 1.5em;
+    color: #667eea;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.proizvod-kolicina {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.proizvod-kolicina.malo {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+.proizvod-kolicina.rasprodat {
+    color: #f44336;
+    font-weight: bold;
+}
+
+.kupi-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.kupi-btn:hover {
+    background: #764ba2;
+}
+
+.kupi-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* Kupljeni proizvodi */
+.kupljeni {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.kupljeni h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.kupljeni ul {
+    list-style: none;
+}
+
+.kupljeni li {
+    padding: 10px;
+    margin: 5px 0;
+    background: white;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 500px;
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-content h2 {
+    color: #667eea;
+    margin-bottom: 20px;
+}
+
+.modal-content p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.modal-content button {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.modal-content button:hover {
+    background: #764ba2;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+    .proizvodi-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+    
+    .info-panel {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

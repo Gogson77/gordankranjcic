@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vending Mašina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🛒 Vending Mašina</h1>
+        
+        <div class="novac-unos" id="novacUnos">
+            <h2>Unesite iznos novca:</h2>
+            <input type="number" id="unosNovca" step="0.01" min="0" placeholder="0.00">
+            <span>KM</span>
+            <button onclick="unesiNovac()">Potvrdi</button>
+        </div>
+
+        <div class="glavni-panel" id="glavniPanel" style="display: none;">
+            <div class="info-panel">
+                <div class="krediti">
+                    <h3>Vaš kredit:</h3>
+                    <div class="kredit-iznos" id="kreditIznos">0.00 KM</div>
+                </div>
+                <button class="kraj-btn" onclick="krajKupovine()">Kraj kupovine i vrati novac</button>
+            </div>
+
+            <div class="proizvodi-grid" id="proizvodiGrid">
+                <!-- Proizvodi će biti generisani JavaScript-om -->
+            </div>
+
+            <div class="kupljeni" id="kupljeniPanel" style="display: none;">
+                <h3>Kupljeni proizvodi:</h3>
+                <ul id="kupljeniLista"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal za poruke -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h2 id="modalNaslov"></h2>
+            <p id="modalPoruka"></p>
+            <button onclick="zatvoriModal()">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
